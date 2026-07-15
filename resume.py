@@ -1,5 +1,6 @@
 import gradio as gr
 import requests
+import os
 
 backend_url = "https://resume-2-yn01.onrender.com/resume"
 
