@@ -21,4 +21,8 @@ demo = gr.Interface(
     title="AI Resume Generator"
 )
 
-demo.launch()
+if _name_ == "_main_":
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860))
+    )
