@@ -1,6 +1,6 @@
+import os
 import gradio as gr
 import requests
-import os
 
 backend_url = "https://resume-2-yn01.onrender.com/resume"
 
@@ -22,8 +22,7 @@ demo = gr.Interface(
     title="AI Resume Generator"
 )
 
-if _name_ == "_main_":
-    demo.launch(
-        server_name="0.0.0.0",
-        server_port=int(os.environ.get("PORT", 7860))
-    )
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 7860))
+)
